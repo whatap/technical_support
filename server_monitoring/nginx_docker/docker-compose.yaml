@@ -1,0 +1,32 @@
+version: '3.3'
+
+services:
+  nginx:
+    build:
+      context: ./nginx
+    volumes:
+      - nginxlog:/usr/local/nginx/logs
+    ports:
+      - "80:80"
+    networks:
+      - nginx_net
+
+  whatap_telegraf:
+    build:
+      context: ./whatap_telegraf
+    volumes:
+      - nginxlog:/var/log/nginx
+    networks:
+      - nginx_net
+    environment:
+      - LICENSE=x422j201dncgu-z1qnrram33mchg-z7ei1lkj93i9cg
+      - WHATAP_SERVER_HOST=15.165.146.117/15.165.146.117
+      - PCODE=2131
+      - NGINX_HOST=nginx
+
+volumes:
+  nginxlog:
+
+networks:
+  nginx_net:
+

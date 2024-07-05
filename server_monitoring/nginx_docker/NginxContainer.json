@@ -1,0 +1,1385 @@
+{
+  "name": "Nginx Container",
+  "widgets": [
+    {
+      "icon": "note",
+      "supports": [],
+      "title": "리치 텍스트",
+      "dirname": "v1/99.etc",
+      "widgetType": "RICH_TEXT",
+      "requestApi": "NONE",
+      "_key_": "v1/99.etc/rich_text",
+      "id": "2idObO0Pl",
+      "layout": {
+        "w": 52,
+        "h": 1,
+        "x": 0,
+        "y": 0,
+        "i": "2idObO0Pl",
+        "moved": false,
+        "static": false
+      },
+      "option": {
+        "markdown": "# Nginx Requests Status Code"
+      }
+    },
+    {
+      "icon": "note",
+      "supports": [],
+      "title": "리치 텍스트",
+      "dirname": "v1/99.etc",
+      "widgetType": "RICH_TEXT",
+      "requestApi": "NONE",
+      "_key_": "v1/99.etc/rich_text",
+      "id": "yYYFrahkg",
+      "layout": {
+        "w": 52,
+        "h": 1,
+        "x": 0,
+        "y": 9,
+        "i": "yYYFrahkg",
+        "moved": false,
+        "static": false
+      },
+      "option": {
+        "markdown": "# Nginx Metrics"
+      }
+    },
+    {
+      "id": "oR5gIFzp29",
+      "title": "Nginx Connections Accepted",
+      "isMultiProject": true,
+      "supports": [
+        {
+          "platform": "INFRA"
+        }
+      ],
+      "layout": {
+        "w": 13,
+        "h": 4,
+        "x": 0,
+        "y": 10,
+        "i": "oR5gIFzp29",
+        "moved": false,
+        "static": false
+      },
+      "requestApi": "SERIES",
+      "widgetType": "SERIES",
+      "icon": "line-chart",
+      "category": "telegraf_nginx",
+      "option": {
+        "panel": {
+          "header": {
+            "display": ""
+          }
+        },
+        "metrics": 0
+      },
+      "metrics": [
+        {
+          "name": "Oname",
+          "tags": [
+            {
+              "key": "oname",
+              "title": "Oname",
+              "unit": "#"
+            }
+          ],
+          "fields": [
+            {
+              "key": "accepts_diff",
+              "title": "Accepts_diff",
+              "unit": "#"
+            }
+          ],
+          "mqlType": "automated"
+        },
+        {
+          "name": "Port",
+          "tags": [
+            {
+              "key": "port",
+              "title": "Port",
+              "unit": "#"
+            }
+          ],
+          "fields": [
+            {
+              "objectMerge": "avg",
+              "timeMerge": "avg",
+              "key": "accepts",
+              "title": "Accepts",
+              "unit": "#"
+            }
+          ],
+          "mqlType": "automated"
+        },
+        {
+          "name": "Project",
+          "tags": [
+            {
+              "key": "pname",
+              "title": "Project",
+              "unit": "#"
+            }
+          ],
+          "fields": [
+            {
+              "objectMerge": "avg",
+              "timeMerge": "avg",
+              "key": "accepts",
+              "title": "Accepts",
+              "unit": "#"
+            }
+          ],
+          "mqlType": "automated"
+        },
+        {
+          "name": "Server",
+          "tags": [
+            {
+              "key": "server",
+              "title": "Server",
+              "unit": "#"
+            }
+          ],
+          "fields": [
+            {
+              "objectMerge": "avg",
+              "timeMerge": "avg",
+              "key": "accepts",
+              "title": "Accepts",
+              "unit": "#"
+            }
+          ],
+          "mqlType": "automated"
+        }
+      ]
+    },
+    {
+      "id": "U1sS7DBfPj",
+      "title": "Nginx Writing",
+      "isMultiProject": true,
+      "supports": [
+        {
+          "platform": "INFRA"
+        }
+      ],
+      "layout": {
+        "w": 13,
+        "h": 4,
+        "x": 13,
+        "y": 10,
+        "i": "U1sS7DBfPj",
+        "moved": false,
+        "static": false
+      },
+      "requestApi": "SERIES",
+      "widgetType": "SERIES",
+      "icon": "line-chart",
+      "category": "telegraf_nginx",
+      "option": {
+        "panel": {
+          "header": {
+            "display": ""
+          }
+        }
+      },
+      "metrics": [
+        {
+          "name": "Oname",
+          "tags": [
+            {
+              "key": "oname",
+              "title": "Oname",
+              "unit": "#"
+            }
+          ],
+          "fields": [
+            {
+              "objectMerge": "avg",
+              "timeMerge": "avg",
+              "key": "writing",
+              "title": "Writing",
+              "unit": "#"
+            }
+          ],
+          "mqlType": "automated"
+        },
+        {
+          "name": "Port",
+          "tags": [
+            {
+              "key": "port",
+              "title": "Port",
+              "unit": "#"
+            }
+          ],
+          "fields": [
+            {
+              "objectMerge": "avg",
+              "timeMerge": "avg",
+              "key": "writing",
+              "title": "Writing",
+              "unit": "#"
+            }
+          ],
+          "mqlType": "automated"
+        },
+        {
+          "name": "Project",
+          "tags": [
+            {
+              "key": "pname",
+              "title": "Project",
+              "unit": "#"
+            }
+          ],
+          "fields": [
+            {
+              "objectMerge": "avg",
+              "timeMerge": "avg",
+              "key": "writing",
+              "title": "Writing",
+              "unit": "#"
+            }
+          ],
+          "mqlType": "automated"
+        },
+        {
+          "name": "Server",
+          "tags": [
+            {
+              "key": "server",
+              "title": "Server",
+              "unit": "#"
+            }
+          ],
+          "fields": [
+            {
+              "objectMerge": "avg",
+              "timeMerge": "avg",
+              "key": "writing",
+              "title": "Writing",
+              "unit": "#"
+            }
+          ],
+          "mqlType": "automated"
+        }
+      ]
+    },
+    {
+      "id": "P-nj51EKP",
+      "title": "Active Connections[accepted]",
+      "isMultiProject": true,
+      "supports": [
+        {
+          "platform": "INFRA"
+        }
+      ],
+      "layout": {
+        "w": 13,
+        "h": 4,
+        "x": 26,
+        "y": 10,
+        "i": "P-nj51EKP",
+        "moved": false,
+        "static": false
+      },
+      "requestApi": "SERIES",
+      "widgetType": "SERIES",
+      "icon": "line-chart",
+      "category": "telegraf_nginx",
+      "option": {
+        "panel": {
+          "header": {
+            "display": ""
+          }
+        }
+      },
+      "metrics": [
+        {
+          "name": "Oname",
+          "tags": [
+            {
+              "key": "oname",
+              "title": "Oname",
+              "unit": "#"
+            }
+          ],
+          "fields": [
+            {
+              "objectMerge": "avg",
+              "timeMerge": "avg",
+              "key": "active",
+              "title": "Active",
+              "unit": "#"
+            }
+          ],
+          "mqlType": "automated"
+        },
+        {
+          "name": "Port",
+          "tags": [
+            {
+              "key": "port",
+              "title": "Port",
+              "unit": "#"
+            }
+          ],
+          "fields": [
+            {
+              "objectMerge": "avg",
+              "timeMerge": "avg",
+              "key": "active",
+              "title": "Active",
+              "unit": "#"
+            }
+          ],
+          "mqlType": "automated"
+        },
+        {
+          "name": "Project",
+          "tags": [
+            {
+              "key": "pname",
+              "title": "Project",
+              "unit": "#"
+            }
+          ],
+          "fields": [
+            {
+              "objectMerge": "avg",
+              "timeMerge": "avg",
+              "key": "active",
+              "title": "Active",
+              "unit": "#"
+            }
+          ],
+          "mqlType": "automated"
+        },
+        {
+          "name": "Server",
+          "tags": [
+            {
+              "key": "server",
+              "title": "Server",
+              "unit": "#"
+            }
+          ],
+          "fields": [
+            {
+              "objectMerge": "avg",
+              "timeMerge": "avg",
+              "key": "active",
+              "title": "Active",
+              "unit": "#"
+            }
+          ],
+          "mqlType": "automated"
+        }
+      ]
+    },
+    {
+      "id": "OletWu21RX",
+      "title": "Waiting",
+      "isMultiProject": true,
+      "supports": [
+        {
+          "platform": "INFRA"
+        }
+      ],
+      "layout": {
+        "w": 13,
+        "h": 4,
+        "x": 39,
+        "y": 10,
+        "i": "OletWu21RX",
+        "moved": false,
+        "static": false
+      },
+      "requestApi": "SERIES",
+      "widgetType": "SERIES",
+      "icon": "line-chart",
+      "category": "telegraf_nginx",
+      "option": {},
+      "metrics": [
+        {
+          "name": "Oname",
+          "tags": [
+            {
+              "key": "oname",
+              "title": "Oname",
+              "unit": "#"
+            }
+          ],
+          "fields": [
+            {
+              "objectMerge": "avg",
+              "timeMerge": "avg",
+              "key": "waiting",
+              "title": "Waiting",
+              "unit": "#"
+            }
+          ],
+          "mqlType": "automated"
+        },
+        {
+          "name": "Port",
+          "tags": [
+            {
+              "key": "port",
+              "title": "Port",
+              "unit": "#"
+            }
+          ],
+          "fields": [
+            {
+              "objectMerge": "avg",
+              "timeMerge": "avg",
+              "key": "waiting",
+              "title": "Waiting",
+              "unit": "#"
+            }
+          ],
+          "mqlType": "automated"
+        },
+        {
+          "name": "Project",
+          "tags": [
+            {
+              "key": "pname",
+              "title": "Project",
+              "unit": "#"
+            }
+          ],
+          "fields": [
+            {
+              "objectMerge": "avg",
+              "timeMerge": "avg",
+              "key": "waiting",
+              "title": "Waiting",
+              "unit": "#"
+            }
+          ],
+          "mqlType": "automated"
+        },
+        {
+          "name": "Server",
+          "tags": [
+            {
+              "key": "server",
+              "title": "Server",
+              "unit": "#"
+            }
+          ],
+          "fields": [
+            {
+              "objectMerge": "avg",
+              "timeMerge": "avg",
+              "key": "waiting",
+              "title": "Waiting",
+              "unit": "#"
+            }
+          ],
+          "mqlType": "automated"
+        }
+      ]
+    },
+    {
+      "id": "NanbOl738_",
+      "title": "Handled Request",
+      "isMultiProject": true,
+      "supports": [
+        {
+          "platform": "INFRA"
+        }
+      ],
+      "layout": {
+        "w": 18,
+        "h": 4,
+        "x": 0,
+        "y": 14,
+        "i": "NanbOl738_",
+        "moved": false,
+        "static": false
+      },
+      "requestApi": "SERIES",
+      "widgetType": "SERIES",
+      "icon": "line-chart",
+      "category": "telegraf_nginx",
+      "option": {
+        "panel": {
+          "header": {
+            "display": ""
+          }
+        },
+        "metrics": 0
+      },
+      "metrics": [
+        {
+          "name": "Oname",
+          "tags": [
+            {
+              "key": "oname",
+              "title": "Oname",
+              "unit": "#"
+            }
+          ],
+          "fields": [
+            {
+              "key": "handled_diff",
+              "title": "Handled_diff",
+              "unit": "#"
+            }
+          ],
+          "mqlType": "automated"
+        },
+        {
+          "name": "Port",
+          "tags": [
+            {
+              "key": "port",
+              "title": "Port",
+              "unit": "#"
+            }
+          ],
+          "fields": [
+            {
+              "objectMerge": "avg",
+              "timeMerge": "avg",
+              "key": "handled",
+              "title": "Handled",
+              "unit": "#"
+            }
+          ],
+          "mqlType": "automated"
+        },
+        {
+          "name": "Project",
+          "tags": [
+            {
+              "key": "pname",
+              "title": "Project",
+              "unit": "#"
+            }
+          ],
+          "fields": [
+            {
+              "objectMerge": "avg",
+              "timeMerge": "avg",
+              "key": "handled",
+              "title": "Handled",
+              "unit": "#"
+            }
+          ],
+          "mqlType": "automated"
+        },
+        {
+          "name": "Server",
+          "tags": [
+            {
+              "key": "server",
+              "title": "Server",
+              "unit": "#"
+            }
+          ],
+          "fields": [
+            {
+              "objectMerge": "avg",
+              "timeMerge": "avg",
+              "key": "handled",
+              "title": "Handled",
+              "unit": "#"
+            }
+          ],
+          "mqlType": "automated"
+        }
+      ]
+    },
+    {
+      "id": "wtnuhk5xNs",
+      "title": "Nginx Requests",
+      "isMultiProject": true,
+      "supports": [
+        {
+          "platform": "INFRA"
+        }
+      ],
+      "layout": {
+        "w": 17,
+        "h": 4,
+        "x": 18,
+        "y": 14,
+        "i": "wtnuhk5xNs",
+        "moved": false,
+        "static": false
+      },
+      "requestApi": "SERIES",
+      "widgetType": "SERIES",
+      "icon": "line-chart",
+      "category": "telegraf_nginx",
+      "option": {
+        "panel": {
+          "header": {
+            "display": ""
+          }
+        }
+      },
+      "metrics": [
+        {
+          "name": "Oname",
+          "tags": [
+            {
+              "key": "oname",
+              "title": "Oname",
+              "unit": "#"
+            }
+          ],
+          "fields": [
+            {
+              "objectMerge": "avg",
+              "timeMerge": "avg",
+              "key": "requests_diff",
+              "title": "Requests_diff",
+              "unit": "#"
+            }
+          ],
+          "mqlType": "automated"
+        },
+        {
+          "name": "Port",
+          "tags": [
+            {
+              "key": "port",
+              "title": "Port",
+              "unit": "#"
+            }
+          ],
+          "fields": [
+            {
+              "objectMerge": "avg",
+              "timeMerge": "avg",
+              "key": "requests_diff",
+              "title": "Requests_diff",
+              "unit": "#"
+            }
+          ],
+          "mqlType": "automated"
+        },
+        {
+          "name": "Project",
+          "tags": [
+            {
+              "key": "pname",
+              "title": "Project",
+              "unit": "#"
+            }
+          ],
+          "fields": [
+            {
+              "objectMerge": "avg",
+              "timeMerge": "avg",
+              "key": "requests_diff",
+              "title": "Requests_diff",
+              "unit": "#"
+            }
+          ],
+          "mqlType": "automated"
+        },
+        {
+          "name": "Server",
+          "tags": [
+            {
+              "key": "server",
+              "title": "Server",
+              "unit": "#"
+            }
+          ],
+          "fields": [
+            {
+              "objectMerge": "avg",
+              "timeMerge": "avg",
+              "key": "requests_diff",
+              "title": "Requests_diff",
+              "unit": "#"
+            }
+          ],
+          "mqlType": "automated"
+        }
+      ]
+    },
+    {
+      "id": "L4EqA29OZk",
+      "title": "Nginx Reading",
+      "isMultiProject": true,
+      "supports": [
+        {
+          "platform": "INFRA"
+        }
+      ],
+      "layout": {
+        "w": 17,
+        "h": 4,
+        "x": 35,
+        "y": 14,
+        "i": "L4EqA29OZk",
+        "moved": false,
+        "static": false
+      },
+      "requestApi": "SERIES",
+      "widgetType": "SERIES",
+      "icon": "line-chart",
+      "category": "telegraf_nginx",
+      "option": {
+        "panel": {
+          "header": {
+            "display": ""
+          }
+        }
+      },
+      "metrics": [
+        {
+          "name": "Oname",
+          "tags": [
+            {
+              "key": "oname",
+              "title": "Oname",
+              "unit": "#"
+            }
+          ],
+          "fields": [
+            {
+              "objectMerge": "avg",
+              "timeMerge": "avg",
+              "key": "reading",
+              "title": "Reading",
+              "unit": "#"
+            }
+          ],
+          "mqlType": "automated"
+        },
+        {
+          "name": "Port",
+          "tags": [
+            {
+              "key": "port",
+              "title": "Port",
+              "unit": "#"
+            }
+          ],
+          "fields": [
+            {
+              "objectMerge": "avg",
+              "timeMerge": "avg",
+              "key": "reading",
+              "title": "Reading",
+              "unit": "#"
+            }
+          ],
+          "mqlType": "automated"
+        },
+        {
+          "name": "Project",
+          "tags": [
+            {
+              "key": "pname",
+              "title": "Project",
+              "unit": "#"
+            }
+          ],
+          "fields": [
+            {
+              "objectMerge": "avg",
+              "timeMerge": "avg",
+              "key": "reading",
+              "title": "Reading",
+              "unit": "#"
+            }
+          ],
+          "mqlType": "automated"
+        },
+        {
+          "name": "Server",
+          "tags": [
+            {
+              "key": "server",
+              "title": "Server",
+              "unit": "#"
+            }
+          ],
+          "fields": [
+            {
+              "objectMerge": "avg",
+              "timeMerge": "avg",
+              "key": "reading",
+              "title": "Reading",
+              "unit": "#"
+            }
+          ],
+          "mqlType": "automated"
+        }
+      ]
+    },
+    {
+      "id": "ABNouuMY01",
+      "title": "Response2XX",
+      "isMultiProject": true,
+      "supports": [
+        {
+          "platform": "INFRA"
+        }
+      ],
+      "layout": {
+        "w": 34,
+        "h": 4,
+        "x": 0,
+        "y": 1,
+        "i": "ABNouuMY01",
+        "moved": false,
+        "static": false
+      },
+      "requestApi": "SERIES",
+      "widgetType": "SERIES",
+      "icon": "line-chart",
+      "category": "telegraf_nginxlog",
+      "option": {
+        "panel": {
+          "header": {
+            "display": ""
+          }
+        },
+        "metrics": 0
+      },
+      "metrics": [
+        {
+          "name": "oname",
+          "mql": "INJECT timepast\nHEADER { \"response_2xx$\":\"#\" }\nOIDSET { oid:$oid, okind:$okind, onode:$onode }\nCATEGORY {\"telegraf_nginxlog\":6h, \"telegraf_nginxlog{m5}\":3d, \"telegraf_nginxlog{h1}\":unlimit } \nTAGLOAD\nINJECT default\n\nUPDATE { key: ['response_200','response_201','response_202','response_204'], value: $TIME_MERGE_PLACE }\nSELECT [ 'pcode', 'time', 'oid', 'response_200','response_201','response_202','response_204', 'oname' ]\nFILTER { key: \"oname\", exist: true }\n\nCREATE { key:_id_, expr: \"pcode+'_'+oname\" }\nCREATE { key:_name_, expr: \"oname\" }\nupdate { key:response_200, notnull:0 }\nupdate { key:response_201, notnull:0 }\nupdate { key:response_202, notnull:0 }\nupdate { key:response_204, notnull:0 }\nCREATE { key:response_2xx, expr: \"response_200+response_201+response_202+response_204\"}\nGROUP { timeunit: 30s, merge: ['response_2xx'], pk: _id_, last: _name_ }\nUPDATE { key: ['response_2xx'], value: $OBJECT_MERGE_PLACE }\nFILTER { key: \"response_2xx\", exist: true }"
+        },
+        {
+          "name": "path",
+          "tags": [
+            {
+              "key": "path",
+              "unit": "#"
+            }
+          ],
+          "fields": [
+            {
+              "objectMerge": "avg",
+              "timeMerge": "avg",
+              "key": "response_200",
+              "unit": "#"
+            }
+          ],
+          "mqlType": "automated"
+        },
+        {
+          "name": "Project",
+          "tags": [
+            {
+              "key": "pname",
+              "title": "Project",
+              "unit": "#"
+            }
+          ],
+          "fields": [
+            {
+              "objectMerge": "avg",
+              "timeMerge": "avg",
+              "key": "response_200",
+              "unit": "#"
+            }
+          ],
+          "mqlType": "automated"
+        },
+        {
+          "name": "resp_code",
+          "tags": [
+            {
+              "key": "resp_code",
+              "unit": "#"
+            }
+          ],
+          "fields": [
+            {
+              "objectMerge": "avg",
+              "timeMerge": "avg",
+              "key": "response_200",
+              "unit": "#"
+            }
+          ],
+          "mqlType": "automated"
+        },
+        {
+          "name": "verb",
+          "tags": [
+            {
+              "key": "verb",
+              "unit": "#"
+            }
+          ],
+          "fields": [
+            {
+              "objectMerge": "avg",
+              "timeMerge": "avg",
+              "key": "response_200",
+              "unit": "#"
+            }
+          ],
+          "mqlType": "automated"
+        }
+      ]
+    },
+    {
+      "id": "pSZ155cYtk",
+      "title": "Response4XX",
+      "isMultiProject": true,
+      "supports": [
+        {
+          "platform": "INFRA"
+        }
+      ],
+      "layout": {
+        "w": 17,
+        "h": 4,
+        "x": 34,
+        "y": 5,
+        "i": "pSZ155cYtk",
+        "moved": false,
+        "static": false
+      },
+      "requestApi": "SERIES",
+      "widgetType": "SERIES",
+      "icon": "line-chart",
+      "category": "telegraf_nginxlog",
+      "option": {
+        "panel": {
+          "header": {
+            "display": ""
+          }
+        },
+        "metrics": 0
+      },
+      "metrics": [
+        {
+          "name": "oname",
+          "mql": "INJECT timepast\nHEADER { \"response_4xx$\":\"#\" }\nOIDSET { oid:$oid, okind:$okind, onode:$onode }\nCATEGORY {\"telegraf_nginxlog\":6h, \"telegraf_nginxlog{m5}\":3d, \"telegraf_nginxlog{h1}\":unlimit } \nTAGLOAD\nINJECT default\n\nUPDATE { key: ['response_400','response_401','response_403','response_404','response_405','response_409'], value: $TIME_MERGE_PLACE }\nSELECT [ 'pcode', 'time', 'oid', 'response_400','response_401','response_403','response_404','response_405','response_409', 'oname' ]\nFILTER { key: \"oname\", exist: true }\n\nCREATE { key:_id_, expr: \"pcode+'_'+oname\" }\nCREATE { key:_name_, expr: \"oname\" }\nupdate { key:response_400, notnull:0 }\nupdate { key:response_401, notnull:0 }\nupdate { key:response_403, notnull:0 }\nupdate { key:response_404, notnull:0 }\nupdate { key:response_405, notnull:0 }\nupdate { key:response_409, notnull:0 }\nCREATE { key:response_4xx, expr: \"response_400+response_401+response_403+response_404+response_405+response_409\"}\nGROUP { timeunit: 30s, merge: ['response_4xx'], pk: _id_, last: _name_ }\nUPDATE { key: ['response_4xx'], value: $OBJECT_MERGE_PLACE }\nFILTER { key: \"response_4xx\", exist: true }"
+        },
+        {
+          "name": "path",
+          "tags": [
+            {
+              "key": "path",
+              "unit": "#"
+            }
+          ],
+          "fields": [
+            {
+              "objectMerge": "avg",
+              "timeMerge": "avg",
+              "key": "response_200",
+              "unit": "#"
+            }
+          ],
+          "mqlType": "automated"
+        },
+        {
+          "name": "Project",
+          "tags": [
+            {
+              "key": "pname",
+              "title": "Project",
+              "unit": "#"
+            }
+          ],
+          "fields": [
+            {
+              "objectMerge": "avg",
+              "timeMerge": "avg",
+              "key": "response_200",
+              "unit": "#"
+            }
+          ],
+          "mqlType": "automated"
+        },
+        {
+          "name": "resp_code",
+          "tags": [
+            {
+              "key": "resp_code",
+              "unit": "#"
+            }
+          ],
+          "fields": [
+            {
+              "objectMerge": "avg",
+              "timeMerge": "avg",
+              "key": "response_200",
+              "unit": "#"
+            }
+          ],
+          "mqlType": "automated"
+        },
+        {
+          "name": "verb",
+          "tags": [
+            {
+              "key": "verb",
+              "unit": "#"
+            }
+          ],
+          "fields": [
+            {
+              "objectMerge": "avg",
+              "timeMerge": "avg",
+              "key": "response_200",
+              "unit": "#"
+            }
+          ],
+          "mqlType": "automated"
+        }
+      ]
+    },
+    {
+      "id": "rL-SbNHJ-1",
+      "title": "Response3XX",
+      "isMultiProject": true,
+      "supports": [
+        {
+          "platform": "INFRA"
+        }
+      ],
+      "layout": {
+        "w": 18,
+        "h": 4,
+        "x": 34,
+        "y": 1,
+        "i": "rL-SbNHJ-1",
+        "moved": false,
+        "static": false
+      },
+      "requestApi": "SERIES",
+      "widgetType": "SERIES",
+      "icon": "line-chart",
+      "category": "telegraf_nginxlog",
+      "option": {
+        "panel": {
+          "header": {
+            "display": ""
+          }
+        },
+        "metrics": 0
+      },
+      "metrics": [
+        {
+          "name": "oname",
+          "mql": "INJECT timepast\nHEADER { \"response_3xx$\":\"#\" }\nOIDSET { oid:$oid, okind:$okind, onode:$onode }\nCATEGORY {\"telegraf_nginxlog\":6h, \"telegraf_nginxlog{m5}\":3d, \"telegraf_nginxlog{h1}\":unlimit } \nTAGLOAD\nINJECT default\n\nUPDATE { key: ['response_300','response_301','response_302','response_303','response_304','response_307'], value: $TIME_MERGE_PLACE }\nSELECT [ 'pcode', 'time', 'oid', 'response_300','response_301','response_302','response_303','response_304','response_307', 'oname' ]\nFILTER { key: \"oname\", exist: true }\n\nCREATE { key:_id_, expr: \"pcode+'_'+oname\" }\nCREATE { key:_name_, expr: \"oname\" }\nupdate { key:response_300, notnull:0 }\nupdate { key:response_301, notnull:0 }\nupdate { key:response_302, notnull:0 }\nupdate { key:response_303, notnull:0 }\nupdate { key:response_304, notnull:0 }\nupdate { key:response_307, notnull:0 }\nCREATE { key:response_3xx, expr: \"response_300+response_301+response_302+response_303+response_304+response_307\"}\nGROUP { timeunit: 30s, merge: ['response_3xx'], pk: _id_, last: _name_ }\nUPDATE { key: ['response_3xx'], value: $OBJECT_MERGE_PLACE }\nFILTER { key: \"response_3xx\", exist: true }"
+        },
+        {
+          "name": "path",
+          "tags": [
+            {
+              "key": "path",
+              "unit": "#"
+            }
+          ],
+          "fields": [
+            {
+              "objectMerge": "avg",
+              "timeMerge": "avg",
+              "key": "response_200",
+              "unit": "#"
+            }
+          ],
+          "mqlType": "automated"
+        },
+        {
+          "name": "Project",
+          "tags": [
+            {
+              "key": "pname",
+              "title": "Project",
+              "unit": "#"
+            }
+          ],
+          "fields": [
+            {
+              "objectMerge": "avg",
+              "timeMerge": "avg",
+              "key": "response_200",
+              "unit": "#"
+            }
+          ],
+          "mqlType": "automated"
+        },
+        {
+          "name": "resp_code",
+          "tags": [
+            {
+              "key": "resp_code",
+              "unit": "#"
+            }
+          ],
+          "fields": [
+            {
+              "objectMerge": "avg",
+              "timeMerge": "avg",
+              "key": "response_200",
+              "unit": "#"
+            }
+          ],
+          "mqlType": "automated"
+        },
+        {
+          "name": "verb",
+          "tags": [
+            {
+              "key": "verb",
+              "unit": "#"
+            }
+          ],
+          "fields": [
+            {
+              "objectMerge": "avg",
+              "timeMerge": "avg",
+              "key": "response_200",
+              "unit": "#"
+            }
+          ],
+          "mqlType": "automated"
+        }
+      ]
+    },
+    {
+      "id": "oAZXUUBWur",
+      "title": "Response5XX",
+      "isMultiProject": true,
+      "supports": [
+        {
+          "platform": "INFRA"
+        }
+      ],
+      "layout": {
+        "w": 17,
+        "h": 4,
+        "x": 0,
+        "y": 5,
+        "i": "oAZXUUBWur",
+        "moved": false,
+        "static": false
+      },
+      "requestApi": "SERIES",
+      "widgetType": "SERIES",
+      "icon": "line-chart",
+      "category": "telegraf_nginxlog",
+      "option": {
+        "panel": {
+          "header": {
+            "display": ""
+          }
+        },
+        "metrics": 0
+      },
+      "metrics": [
+        {
+          "name": "oname",
+          "mql": "INJECT timepast\nHEADER { \"response_5xx$\":\"#\" }\nOIDSET { oid:$oid, okind:$okind, onode:$onode }\nCATEGORY {\"telegraf_nginxlog\":6h, \"telegraf_nginxlog{m5}\":3d, \"telegraf_nginxlog{h1}\":unlimit } \nTAGLOAD\nINJECT default\n\nUPDATE { key: ['response_500','response_501','response_502','response_503'], value: $TIME_MERGE_PLACE }\nSELECT [ 'pcode', 'time', 'oid', 'response_500','response_501','response_502','response_503', 'oname' ]\nFILTER { key: \"oname\", exist: true }\n\nCREATE { key:_id_, expr: \"pcode+'_'+oname\" }\nCREATE { key:_name_, expr: \"oname\" }\nupdate { key:response_500, notnull:0 }\nupdate { key:response_501, notnull:0 }\nupdate { key:response_502, notnull:0 }\nupdate { key:response_503, notnull:0 }\nCREATE { key:response_5xx, expr: \"response_500+response_501+response_502+response_503\"}\nGROUP { timeunit: 30s, merge: ['response_5xx'], pk: _id_, last: _name_ }\nUPDATE { key: ['response_5xx'], value: $OBJECT_MERGE_PLACE }\nFILTER { key: \"response_5xx\", exist: true }"
+        },
+        {
+          "name": "path",
+          "tags": [
+            {
+              "key": "path",
+              "unit": "#"
+            }
+          ],
+          "fields": [
+            {
+              "objectMerge": "avg",
+              "timeMerge": "avg",
+              "key": "response_200",
+              "unit": "#"
+            }
+          ],
+          "mqlType": "automated"
+        },
+        {
+          "name": "Project",
+          "tags": [
+            {
+              "key": "pname",
+              "title": "Project",
+              "unit": "#"
+            }
+          ],
+          "fields": [
+            {
+              "objectMerge": "avg",
+              "timeMerge": "avg",
+              "key": "response_200",
+              "unit": "#"
+            }
+          ],
+          "mqlType": "automated"
+        },
+        {
+          "name": "resp_code",
+          "tags": [
+            {
+              "key": "resp_code",
+              "unit": "#"
+            }
+          ],
+          "fields": [
+            {
+              "objectMerge": "avg",
+              "timeMerge": "avg",
+              "key": "response_200",
+              "unit": "#"
+            }
+          ],
+          "mqlType": "automated"
+        },
+        {
+          "name": "verb",
+          "tags": [
+            {
+              "key": "verb",
+              "unit": "#"
+            }
+          ],
+          "fields": [
+            {
+              "objectMerge": "avg",
+              "timeMerge": "avg",
+              "key": "response_200",
+              "unit": "#"
+            }
+          ],
+          "mqlType": "automated"
+        }
+      ]
+    },
+    {
+      "id": "cR-KoVw_U-",
+      "title": "Response503",
+      "isMultiProject": true,
+      "supports": [
+        {
+          "platform": "INFRA"
+        }
+      ],
+      "layout": {
+        "w": 17,
+        "h": 4,
+        "x": 17,
+        "y": 5,
+        "i": "cR-KoVw_U-",
+        "moved": false,
+        "static": false
+      },
+      "requestApi": "SERIES",
+      "widgetType": "SERIES",
+      "icon": "line-chart",
+      "category": "telegraf_nginxlog",
+      "option": {
+        "panel": {
+          "header": {
+            "display": ""
+          }
+        },
+        "metrics": 0
+      },
+      "metrics": [
+        {
+          "name": "oname",
+          "mql": "INJECT timepast\nHEADER { \"response_503$\":\"#\" }\nOIDSET { oid:$oid, okind:$okind, onode:$onode }\nCATEGORY {\"telegraf_nginxlog\":6h, \"telegraf_nginxlog{m5}\":3d, \"telegraf_nginxlog{h1}\":unlimit } \nTAGLOAD\nINJECT default\nUPDATE { key: ['response_503'], value: $TIME_MERGE_PLACE }\nSELECT [ 'pcode', 'time', 'oid', 'response_503', 'oname' ]\nFILTER { key: \"response_503\", exist: true }\nFILTER { key: \"oname\", exist: true }\n\nCREATE { key:_id_, expr: \"pcode+'_'+oname\" }\nCREATE { key:_name_, expr: \"oname\" }\nGROUP { timeunit: 30s, merge: ['response_503'], pk: _id_, last: _name_ }\nUPDATE { key: ['response_503'], value: $OBJECT_MERGE_PLACE }"
+        },
+        {
+          "name": "path",
+          "tags": [
+            {
+              "key": "path",
+              "unit": "#"
+            }
+          ],
+          "fields": [
+            {
+              "objectMerge": "avg",
+              "timeMerge": "avg",
+              "key": "response_200",
+              "unit": "#"
+            }
+          ],
+          "mqlType": "automated"
+        },
+        {
+          "name": "Project",
+          "tags": [
+            {
+              "key": "pname",
+              "title": "Project",
+              "unit": "#"
+            }
+          ],
+          "fields": [
+            {
+              "objectMerge": "avg",
+              "timeMerge": "avg",
+              "key": "response_200",
+              "unit": "#"
+            }
+          ],
+          "mqlType": "automated"
+        },
+        {
+          "name": "resp_code",
+          "tags": [
+            {
+              "key": "resp_code",
+              "unit": "#"
+            }
+          ],
+          "fields": [
+            {
+              "objectMerge": "avg",
+              "timeMerge": "avg",
+              "key": "response_200",
+              "unit": "#"
+            }
+          ],
+          "mqlType": "automated"
+        },
+        {
+          "name": "verb",
+          "tags": [
+            {
+              "key": "verb",
+              "unit": "#"
+            }
+          ],
+          "fields": [
+            {
+              "objectMerge": "avg",
+              "timeMerge": "avg",
+              "key": "response_200",
+              "unit": "#"
+            }
+          ],
+          "mqlType": "automated"
+        }
+      ]
+    }
+  ],
+  "extra": {
+    "layout": {
+      "type": "FIXED",
+      "monitor": {
+        "x": 3,
+        "y": 3
+      }
+    },
+    "option": {}
+  }
+}
