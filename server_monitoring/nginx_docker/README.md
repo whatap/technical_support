@@ -39,7 +39,7 @@ location /nginx_status {
 }
 ```
 
-2. 환경 변수 설정 및 Docker Compose 실행
+### 2. 환경 변수 설정 및 Docker Compose 실행
 run.sh 스크립트를 실행하여 Docker Compose 파일을 생성하고 컨테이너를 실행합니다. 스크립트 실행 전에 LICENSE, WHATAP_SERVER_HOST, PCODE 환경 변수를 설정합니다.
 
 ```bash
@@ -87,5 +87,5 @@ EOF
 docker-compose up --build
 ```
 
-3. 대시보드 Import
+### 3. 대시보드 Import
 NginxContainer.json 플렉스보드를 Import 합니다.
