@@ -3,7 +3,7 @@
 이 리포지토리는 Nginx를 Telegraf로 모니터링하는 예제를 제공합니다. Docker Compose를 사용하여 Nginx와 Telegraf를 설정하며, Telegraf는 Nginx의 상태를 모니터링하고 로그를 수집합니다.
 
 ## 디렉토리 구조
-
+```bash
 nginx_docker/
 ├── nginx/
 │ ├── bin/
@@ -16,7 +16,7 @@ nginx_docker/
 ├── docker-compose.yaml
 ├── NginxContainer.json
 └── run.sh
-
+```
 
 ## 설정 방법
 
